@@ -18,17 +18,23 @@
         renderer.setSize(container.clientWidth, container.clientHeight);
         container.appendChild(renderer.domElement);
 
-         const frontLight = new THREE.DirectionalLight(0xffffff, 0.7);
-        frontLight.position.set(0, 1, 1).normalize();
+        const topLight = new THREE.DirectionalLight(0xffffff, 0.3);
+        scene.add(topLight)
+
+        const frontLight = new THREE.DirectionalLight(0xffffff, 0.2);
+        // frontLight.position.set(0, 1, 1).normalize();
         scene.add(frontLight);
  
-        const backLight = new THREE.DirectionalLight(0xffffff, 0.7);
-        backLight.position.set(0, -1, -1).normalize();
+        const backLight = new THREE.DirectionalLight(0xffffff, 0.2);
+        // backLight.position.set(0, -1, -1).normalize();
         scene.add(backLight);
  
-        const pointLight = new THREE.PointLight(0xffffff, 0.8);
-        pointLight.position.set(5, 5, 5);
+        const pointLight = new THREE.PointLight(0xffffff, 0.3);
+        // pointLight.position.set(5, 5, 5);
         scene.add(pointLight);
+
+        const ambientLight = new THREE.AmbientLight(0xffffff, 0.2);
+        scene.add(ambientLight);
  
         // Añadir controles de órbita
         const controls = new THREE.OrbitControls(camera, renderer.domElement);
