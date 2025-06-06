@@ -2,7 +2,7 @@
         function fillModal(title, description, imageUrl) {
             document.getElementById('productModalLabel').textContent = title;
             document.getElementById('modalDescription').textContent = description;
-            document.getElementById('modalImage').src = imageUrl;
+            // document.getElementById('modalImage').src = imageUrl;
         }
 
         let renderer, camera, scene, controls;
