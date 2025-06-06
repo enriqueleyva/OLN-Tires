@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Your Tire - Bootstrap</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="header-custom bg-custom-black">
+        <nav class="navbar navbar-expand-lg container">
+            <a class="navbar-brand" href="#">
+                <img src="img/logo.png" alt="TIRE Company Logo" class="logo-img-header">
+                </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Catálogo</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">¿Quiénes somos?</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Marcas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+            </div>
+        </nav>
+    </header>
+
+    <div class="row">
+        <div class="col-4">
+            
+        </div>
+    </div>
+    <div class="container-fluid main-content-area">
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="filters-sidebar">
+                    <div class="form-group mb-4">
+                        <div class="search-input-wrapper">
+                            <!-- <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search search-icon" viewBox="0 0 16 16">
+                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.085.12zM12.684 11.2a5.5 5.5 0 1 1-7.794-7.794 5.5 5.5 0 0 1 7.794 7.794M15.354 15.354l-2.45-2.45a.5.5 0 0 0-.708.708l2.45 2.45a.5.5 0 0 0 .708-.708"/>
+                            </svg> -->
+                            <input class="form-control" type="text" placeholder="¿Buscas algún modelo?">
+                        </div>
+                    </div>
+
+                    <h5 class="mb-3">Filtros</h5>
+                    <div class="form-group mb-3 p-3 rounded" style="background-color: #3b3b3b; color: #fff;">
+                        <!-- <label class="form-label fw-bold">Filters</label> -->
+
+                        <!-- Tamaño -->
+                        <div class="dropdown mb-2">
+                            <button class="btn btn-outline-light dropdown-toggle w-100 text-start" type="button" id="sidebarDropdownSize" data-bs-toggle="dropdown" aria-expanded="false">
+                                Medida
+                            </button>
+                            <ul class="dropdown-menu w-100" aria-labelledby="sidebarDropdownSize">
+                                <li><a class="dropdown-item" href="#">Small</a></li>
+                                <li><a class="dropdown-item" href="#">Medium</a></li>
+                                <li><a class="dropdown-item" href="#">Large</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Aplicación -->
+                        <div class="dropdown mb-2">
+                            <button class="btn btn-outline-light dropdown-toggle w-100 text-start" type="button" id="sidebarDropdownApp" data-bs-toggle="dropdown" aria-expanded="false">
+                                Aplicación
+                            </button>
+                            <ul class="dropdown-menu w-100" aria-labelledby="sidebarDropdownApp">
+                                <li><a class="dropdown-item" href="#">Agriculture</a></li>
+                                <li><a class="dropdown-item" href="#">Mining</a></li>
+                                <li><a class="dropdown-item" href="#">Truck</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Marca -->
+                        <div class="dropdown mb-2">
+                            <button class="btn btn-outline-light dropdown-toggle w-100 text-start" type="button" id="sidebarDropdownBrand" data-bs-toggle="dropdown" aria-expanded="false">
+                                Marca
+                            </button>
+                            <ul class="dropdown-menu w-100" aria-labelledby="sidebarDropdownBrand">
+                                <li><a class="dropdown-item" href="#">Starstone</a></li>
+                                <li><a class="dropdown-item" href="#">RoyalBlack</a></li>
+                                <li><a class="dropdown-item" href="#">GMX</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-lg-9">
+                <h2 class="section-title">Nuestras marcas</h2>
+                <div class="row text-center mb-5">
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 mb-4">
+                        <div class="brand-card">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBUHmF4pH53LBJwgflSk0jT7UlJdI_gUY9hQ&s" class="img-fluid" alt="AgriTire Logo">
+                            <h5 class="card-title">Starstone</h5>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 mb-4">
+                        <div class="brand-card">
+                            <img src="https://admin.tireclick.com/images/marcas/royalblack.png" class="img-fluid" alt="MineTough Logo">
+                            <h5 class="card-title">RoyalBlack</h5>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 mb-4">
+                            <div class="brand-card">
+                                <img src="https://gestyre.com/img/m/1000017-mf_image2.jpg" class="img-fluid" alt="TruckMaster Logo">
+                                <h5 class="card-title">RockBusters</h5>
+                            </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 mb-4">
+                        <div class="brand-card">
+                            <img src="https://marvel-b1-cdn.bc0a.com/f00000000270535/s19532.pcdn.co/wp-content/uploads/2014/06/AR-131029931.jpgmaxW618cci_ts20131026142356-001.jpg" class="img-fluid" alt="FieldGrip Logo">
+                            <h5 class="card-title">JK Tire</h5>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 mb-4">
+                        <div class="brand-card">
+                                <img src="https://lh3.googleusercontent.com/proxy/jDsrvDkBD9zo6Ipy0VVCzRytBxtNhG4TBlnpn3eogma2GKeAuhDBOZsIcq2VOE_Rw7dbpF2-" class="img-fluid" alt="RockSteady Logo">
+                                <h5 class="card-title">GMX</h5>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 mb-4">
+                        <div class="brand-card">
+                                <img src="https://www.carlogos.org/tire-logos/gladiator-logo-900x300-show.png" class="img-fluid" alt="RockSteady Logo">
+                                <h5 class="card-title">Gladiator</h5>
+                        </div>
+                    </div>
+                    </div>
+
+                <h2 class="section-title">Nuestro catálogo</h2>
+                <p class="catalog-description">Su neumático ideal está aquí. Explore nuestro catálogo optimizado con filtros por tipo de aplicación, tamaño y marca.</p>
+
+                <div class="tab-content" id="tireCategoryTabContent">
+                    <div class="tab-pane fade show active" id="agricultural-content" role="tabpanel" aria-labelledby="agricultural-tab">
+                        <div class="row">
+                           <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
+                                <div class="product-card">
+                                    <img src="https://olntires.com/wpolntires/wp-content/uploads/2021/12/GMX-R-1.png" class="card-img-top" alt="AgriPro 2000 Tire">
+                                    <div class="card-body">
+                                        <h5 class="card-title">AgriPro 2000</h5>
+                                        <p class="card-text">All-season agricultural tire</p>
+                                        <button class="btn btn-details" data-bs-toggle="modal" data-bs-target="#productModal" onclick="fillModal('AgriPro 2000', 'All-season agricultural tire', 'https://via.placeholder.com/300x200/555555/EEEEEE?text=AgriPro%202000')">
+                                            Ver más <i class="bi bi-arrow-right-short"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
+                                <div class="product-card">
+                                    <img src="https://olntires.com/wpolntires/wp-content/uploads/2021/12/GMX-I-1-2.png" class="card-img-top" alt="TerraGrip 3000 Tire">
+                                    <div class="card-body">
+                                        <h5 class="card-title">TerraGrip 3000</h5>
+                                        <p class="card-text">High-traction mining tire</p>
+                                        <button class="btn btn-details">
+                                            Ver más <i class="bi bi-arrow-right-short"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
+                                <div class="product-card">
+                                    <img src="https://olntires.com/wpolntires/wp-content/uploads/2021/12/GMX-F-2.png" class="card-img-top" alt="HeavyHaul 5000 Tire">
+                                    <div class="card-body">
+                                        <h5 class="card-title">HeavyHaul 5000</h5>
+                                        <p class="card-text">Durable truck tire</p>
+                                        <button class="btn btn-details">
+                                            Ver más <i class="bi bi-arrow-right-short"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
+                                <div class="product-card">
+                                    <img src="https://olntires.com/wpolntires/wp-content/uploads/2021/12/EMPIRE-EM699.png" class="card-img-top" alt="FieldMaster 1000 Tire">
+                                    <div class="card-body">
+                                        <h5 class="card-title">FieldMaster 1000</h5>
+                                        <p class="card-text">Versatile field tire</p>
+                                        <button class="btn btn-details">
+                                            Ver más <i class="bi bi-arrow-right-short"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
+                                <div class="product-card">
+                                    <img src="https://olntires.com/wpolntires/wp-content/uploads/2021/12/JETWAY-JUL2.png" class="card-img-top" alt="RockSolid 4000 Tire">
+                                    <div class="card-body">
+                                        <h5 class="card-title">RockSolid 4000</h5>
+                                        <p class="card-text">Heavy-duty mining tire</p>
+                                        <button class="btn btn-details">
+                                            Ver más <i class="bi bi-arrow-right-short"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
+                                <div class="product-card">
+                                    <img src="https://olntires.com/wpolntires/wp-content/uploads/2021/12/QR90-PT-OK.png" class="card-img-top" alt="RoadKing 6000 Tire">
+                                    <div class="card-body">
+                                        <h5 class="card-title">RoadKing 6000</h5>
+                                        <p class="card-text">Long-lasting truck tire</p>
+                                        <button class="btn btn-details">
+                                            Ver más <i class="bi bi-arrow-right-short"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="mining-content" role="tabpanel" aria-labelledby="mining-tab">
+                        <div class="row">
+                            <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
+                                <div class="product-card">
+                                    <img src="https://via.placeholder.com/300x200/555555/EEEEEE?text=MineGuard%20100" class="card-img-top" alt="MineGuard 100 Tire">
+                                    <div class="card-body">
+                                        <h5 class="card-title">MineGuard 100</h5>
+                                        <p class="card-text">Designed for harsh mining environments.</p>
+                                        <button class="btn btn-details">
+                                            Ver más <i class="bi bi-arrow-right-short"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
+                                <div class="product-card">
+                                    <img src="https://via.placeholder.com/300x200/555555/EEEEEE?text=RockHauler%20200" class="card-img-top" alt="RockHauler 200 Tire">
+                                    <div class="card-body">
+                                        <h5 class="card-title">RockHauler 200</h5>
+                                        <p class="card-text">Heavy duty for large haul trucks.</p>
+                                        <button class="btn btn-details">
+                                            Ver más <i class="bi bi-arrow-right-short"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                    </div>
+                    <div class="tab-pane fade" id="truck-content" role="tabpanel" aria-labelledby="truck-tab">
+                        <div class="row">
+                            <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
+                                <div class="product-card">
+                                    <img src="https://via.placeholder.com/300x200/555555/EEEEEE?text=RoadPro%20Pro" class="card-img-top" alt="RoadPro Pro Tire">
+                                    <div class="card-body">
+                                        <h5 class="card-title">RoadPro Pro</h5>
+                                        <p class="card-text">Premium tire for long-haul trucking.</p>
+                                        <button class="btn btn-details">
+                                            Ver más <i class="bi bi-arrow-right-short"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
+                                <div class="product-card">
+                                    <img src="https://via.placeholder.com/300x200/555555/EEEEEE?text=CityDrive%20X" class="card-img-top" alt="CityDrive X Tire">
+                                    <div class="card-body">
+                                        <h5 class="card-title">CityDrive X</h5>
+                                        <p class="card-text">Optimized for urban delivery vehicles.</p>
+                                        <button class="btn btn-details">
+                                            Ver más <i class="bi bi-arrow-right-short"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                    </div>
+                </div>
+
+                <div class="modal fade" id="productModal" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-xl modal-dialog-centered animate__animated animate__fadeIn">
+                        <div class="modal-content bg-white text-dark">
+                        
+                            <!-- Título -->
+                            <div class="modal-header border-bottom-0 pb-0">
+                                <h5 class="modal-title fw-bold text-uppercase" id="productModalLabel">AgriPro 2000</h5>
+                                <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button> -->
+                            </div>
+                            
+                            <!-- Cuerpo del Modal dividido en dos columnas -->
+                            <div class="modal-body">
+                                <div class="row g-4">
+                                    <div class="col-md-7">
+                                        <div class="border rounded-3 p-2" style="background: #f8f9fa;">
+                                        <div id="tresDe" style="width: 100%; height: 400px; background: transparent;"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div class="bg-light p-3 rounded-3 border-start border-3 border-danger h-100 d-flex flex-column justify-content-center">
+                                        <p id="modalDescription" class="mb-2">
+                                            Neumático agrícola de alta resistencia, ideal para tracción y larga duración.
+                                        </p>
+                                        <ul class="large ps-3 mb-0">
+                                            <li>Alta tracción en terrenos húmedos</li>
+                                            <li>Diseño reforzado en los hombros</li>
+                                            <li>Disponible en medidas: 12.4R28, 13.6R38...</li>
+                                        </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer border-top-0 pt-3">
+                                <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <nav aria-label="Catalog Pagination">
+                    <ul class="pagination justify-content-center">
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Previous">
+                                <i class="bi bi-chevron-left"></i>
+                            </a>
+                        </li>
+                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Next">
+                                <i class="bi bi-chevron-right"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <footer class="text-white pt-5 pb-4" style="background-color: #000;">
+        <div class="container text-center text-md-start">
+            <div class="row">
+                <!-- Columna 1: Marca y descripción -->
+                <div class="col-md-4 col-lg-4 col-xl-3 mb-4">
+                    <!-- <h5 class="text-uppercase fw-bold mb-3" style="color: #c40000;">OLN Tires</h5> -->
+                    <img src="img/logo.png" height="30">
+                    <p class="text-light small">
+                        Distribuidora de llantas agrícolas, industriales y para camión. Rendimiento, durabilidad y potencia en cada giro.
+                    </p>
+                </div>
+
+                <!-- Columna 2: Navegación -->
+                <div class="col-md-4 col-lg-3 col-xl-2 mb-4">
+                    <h6 class="text-uppercase fw-bold mb-3">Enlaces</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light text-decoration-none small">Inicio</a></li>
+                        <li><a href="#" class="text-light text-decoration-none small">Productos</a></li>
+                        <li><a href="#" class="text-light text-decoration-none small">Catálogo</a></li>
+                        <li><a href="#" class="text-light text-decoration-none small">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <!-- Columna 3: Contacto -->
+                <div class="col-md-4 col-lg-4 col-xl-3 mb-4">
+                    <h6 class="text-uppercase fw-bold mb-3">Contacto</h6>
+                    <p class="small"><i class="bi bi-geo-alt-fill me-2 text-danger"></i> Calle Ejemplo 123, Ciudad</p>
+                    <p class="small"><i class="bi bi-telephone-fill me-2 text-danger"></i> +52 123 456 7890</p>
+                    <p class="small"><i class="bi bi-envelope-fill me-2 text-danger"></i> contacto@olntires.com</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Línea inferior -->
+        <div class="text-center py-3 mt-3" style="background-color: #111;">
+            <small>&copy; 2025 OLN Tires. Todos los derechos reservados.</small>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/mrdoob/three.js@r128/examples/js/loaders/GLTFLoader.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/mrdoob/three.js@r128/examples/js/controls/OrbitControls.js"></script>
+
+    <script>
+        function fillModal(title, description, imageUrl) {
+            document.getElementById('productModalLabel').textContent = title;
+            document.getElementById('modalDescription').textContent = description;
+            document.getElementById('modalImage').src = imageUrl;
+        }
+
+        let renderer, camera, scene, controls;
+
+    document.getElementById('productModal').addEventListener('shown.bs.modal', function () {
+        const container = document.getElementById('tresDe');
+        container.innerHTML = ''; // Limpiar canvas anterior si existe
+
+        // Crear escena
+        scene = new THREE.Scene();
+        camera = new THREE.PerspectiveCamera(50, container.clientWidth / container.clientHeight, 0.1, 1000);
+        renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true,  });
+        renderer.setSize(container.clientWidth, container.clientHeight);
+        container.appendChild(renderer.domElement);
+
+         const frontLight = new THREE.DirectionalLight(0xffffff, 0.7);
+        frontLight.position.set(0, 1, 1).normalize();
+        scene.add(frontLight);
+ 
+        const backLight = new THREE.DirectionalLight(0xffffff, 0.7);
+        backLight.position.set(0, -1, -1).normalize();
+        scene.add(backLight);
+ 
+        const pointLight = new THREE.PointLight(0xffffff, 0.8);
+        pointLight.position.set(5, 5, 5);
+        scene.add(pointLight);
+ 
+        // Añadir controles de órbita
+        const controls = new THREE.OrbitControls(camera, renderer.domElement);
+        controls.enableDamping = true;
+        controls.dampingFactor = 0.05;
+        controls.screenSpacePanning = false;
+        controls.minDistance = 1;
+        controls.maxDistance = 10;
+ 
+        let textura; // Variable para almacenar la textura
+        let targetMesh; // Variable para almacenar la malla objetivo
+ 
+        // Variables para controlar el desplazamiento y escala de la textura
+        let offsetStep = 0.01; // Paso de desplazamiento
+        let scaleStep = 0.01;   // Paso de escala
+        let currentOffset = { x: 0, y: 0 }; // Desplazamiento actual
+        let textureScale = 1;  // Escala actual de la textura
+ 
+        // Variables para almacenar los valores iniciales de repeat y offset
+        let initialRepeat = { u: 1, v: 1 };
+        let initialOffset = { x: 0, y: 0 };
+ 
+        // Cargar el modelo GLTF
+        const loader = new THREE.GLTFLoader();
+        loader.load('llanta.gltf', function (gltf) {
+            const model = gltf.scene;
+            // model.scale.set(3, 3, 3);
+            scene.add(model);
+ 
+            // Cargar la textura
+            const textureLoader = new THREE.TextureLoader();
+
+            // Posicionar la cámara
+            camera.position.z = 5;
+        });
+ 
+        // Event listener para las teclas de dirección y escala
+        window.addEventListener('keydown', function (event) {
+            if (textura) {
+                switch (event.key) {
+                    case 'ArrowUp':
+                        currentOffset.y += offsetStep;
+                        break;
+                    case 'ArrowDown':
+                        currentOffset.y -= offsetStep;
+                        break;
+                    case 'ArrowLeft':
+                        currentOffset.x -= offsetStep;
+                        break;
+                    case 'ArrowRight':
+                        currentOffset.x += offsetStep;
+                        break;
+                    case 'a':
+                    case 'a': // Algunas teclas '+' requieren '='
+                        textureScale += scaleStep;
+                        if (textureScale > 5) textureScale = 5; // Escala máxima
+                        break;
+                    case 'b':
+                        textureScale -= scaleStep;
+                        if (textureScale < 0.1) textureScale = 0.1; // Escala mínima
+                        break;
+                    case 'z':
+                        textureScale = 1
+                }
+ 
+                // Actualizar la escala y el desplazamiento de la textura basados en los valores iniciales
+                textura.repeat.set(initialRepeat.u * textureScale, initialRepeat.v * textureScale);
+                textura.offset.set(initialOffset.x + currentOffset.x, initialOffset.y + currentOffset.y);
+                textura.needsUpdate = true;
+            }
+        });
+ 
+        // Función de animación
+        const animate = function () {
+            requestAnimationFrame(animate);
+            renderer.render(scene, camera);
+        };
+        animate();
+ 
+        // Ajustar el renderizado al tamaño de la ventana
+        window.addEventListener('resize', function () {
+            const width = container.clientWidth;
+            const height = container.clientHeight;
+            renderer.setSize(width, height);
+            camera.aspect = width / height;
+            camera.updateProjectionMatrix();
+        });
+    });
+
+        // Crear la escena, cámara y renderizador
+        scene = new THREE.Scene();
+        camera = new THREE.PerspectiveCamera(50, window.innerWidth / window.innerHeight, 0.1, 1000);
+         renderer = new THREE.WebGLRenderer();
+        // renderer.setSize(window.innerWidth, window.innerHeight);
+        // document.getElementById('tresDe').appendChild(renderer.domElement)
+        // document.body.appendChild(renderer.domElement);
+        const container = document.getElementById('tresDe');
+        renderer.setSize(container.clientWidth, container.clientHeight);
+        camera.aspect = container.clientWidth / container.clientHeight;
+        camera.updateProjectionMatrix();
+        container.appendChild(renderer.domElement);
+ 
+        const gridHelper = new THREE.GridHelper(10, 10);
+        scene.add(gridHelper);
+ 
+        // Añadir luces
+        const topLight = new THREE.DirectionalLight(0xffffff, 0.7);
+        topLight.position.set(0, 10, 0);
+        scene.add(topLight);
+ 
+       
+    </script>
+</body>
+</html>
