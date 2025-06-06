@@ -2,7 +2,7 @@
         function fillModal(title, description, imageUrl) {
             document.getElementById('productModalLabel').textContent = title;
             document.getElementById('modalDescription').textContent = description;
-            document.getElementById('modalImage').src = imageUrl;
+            // document.getElementById('modalImage').src = imageUrl;
         }
 
         let renderer, camera, scene, controls;
@@ -53,7 +53,7 @@
  
         // Cargar el modelo GLTF
         const loader = new THREE.GLTFLoader();
-        loader.load('llanta.gltf', function (gltf) {
+        loader.load('img/models/llanta.gltf', function (gltf) {
             const model = gltf.scene;
             // model.scale.set(3, 3, 3);
             scene.add(model);
