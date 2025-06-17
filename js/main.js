@@ -6,29 +6,29 @@ function fillModal(title, description, imageUrl) {
 
 gsap.registerPlugin(ScrollTrigger);
 
-gsap.utils.toArray(".brand-logo").forEach((logo, index) => {
-	gsap.fromTo(
-		logo,
-		{
-			opacity: 0,
-			rotate: -360,
-			scale: 0.6,
-		},
-		{
-			opacity: 1,
-			rotate: 0,
-			scale: 1,
-			duration: 1,
-			delay: index * 0.1,
-			ease: "bounce.out",
-			scrollTrigger: {
-				trigger: logo,
-				start: "top 90%",
-				toggleActions: "play none none none",
-			},
-		}
-	);
-});
+// gsap.utils.toArray(".brand-logo").forEach((logo, index) => {
+// 	gsap.fromTo(
+// 		logo,
+// 		{
+// 			opacity: 0,
+// 			rotate: -360,
+// 			scale: 0.6,
+// 		},
+// 		{
+// 			opacity: 1,
+// 			rotate: 0,
+// 			scale: 1,
+// 			duration: 1,
+// 			delay: index * 0.1,
+// 			ease: "bounce.out",
+// 			scrollTrigger: {
+// 				trigger: logo,
+// 				start: "top 90%",
+// 				toggleActions: "play none none none",
+// 			},
+// 		}
+// 	);
+// });
 
 document.querySelectorAll(".brand-logo").forEach((logo) => {
 	logo.addEventListener("mouseenter", () => {
