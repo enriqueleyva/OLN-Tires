@@ -574,8 +574,8 @@
         /* Contenido Principal (main) */
         .main-content-area {
             /* background-color: #1a1a1a; Fondo oscuro principal */
-            padding-top: 3rem;
-            padding-bottom: 3rem;
+            padding-top: 1.5rem;
+            padding-bottom: 1.5rem;
         }
 
         /* Sidebar de Filtros */
@@ -586,6 +586,18 @@
             padding: 1.5rem;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             position: sticky;
+            /* Hace que el sidebar se pegue mientras haces scroll */
+            top: 20px;
+            /* Distancia desde la parte superior */
+        }
+
+        .filters-sidebar-main {
+            background-color: #2b2b2b;
+            /* Fondo de la barra lateral */
+            border-radius: 0.5rem;
+            padding: 1.5rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
             /* Hace que el sidebar se pegue mientras haces scroll */
             top: 20px;
             /* Distancia desde la parte superior */
